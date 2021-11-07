@@ -1,0 +1,12 @@
+.commentArea {
+    border: 1px solid gray;
+}
+.commnentContainer {
+    padding: 15px;
+}
+.userName {
+    font-weight: bold;
+}
+.comment {
+    color: gray;
+}

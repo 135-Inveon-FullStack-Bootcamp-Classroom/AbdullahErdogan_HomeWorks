@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100vw;
+}
+.logoLink {
+    margin-right: 150px;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+}
+.searchInput {
+    height: 25px;
+    width: 250px;
+    padding-left: 10px;
+}
+.tuzlu {
+    color: rgb(255, 6, 6);
+}

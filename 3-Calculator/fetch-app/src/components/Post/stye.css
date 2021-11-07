@@ -1,0 +1,10 @@
+.postArea {
+    width: 70%;
+}
+.postTitle {
+    text-decoration: none;
+    color: rgb(255, 6, 6);
+}
+.postBody {
+    color: gray;
+}

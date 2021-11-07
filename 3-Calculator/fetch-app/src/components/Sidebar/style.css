@@ -1,0 +1,11 @@
+.sidebarList {
+    list-style: none;
+}
+.listItem {
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+    transition: all 0.5s;
+}
+.listItem:hover {
+    color: rgb(150, 150, 150);
+}
