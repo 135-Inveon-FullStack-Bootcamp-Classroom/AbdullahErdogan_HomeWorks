@@ -3,6 +3,7 @@ const CapsContext = createContext();
 
 export const CapsProvider = ({ children }) => {
     const [capsList, setCapsList] = useState();
+    const [generatedMeme, setGeneratedMeme] = useState();
     useEffect(() => {
         fetch("https://api.imgflip.com/get_memes")
             .then((res) => res.json())
@@ -16,7 +17,15 @@ export const CapsProvider = ({ children }) => {
         }
     };
     return (
-        <CapsContext.Provider value={{ capsList, setCapsList, getMemeById }}>
+        <CapsContext.Provider
+            value={{
+                capsList,
+                setCapsList,
+                getMemeById,
+                generatedMeme,
+                setGeneratedMeme,
+            }}
+        >
             {children}
         </CapsContext.Provider>
     );

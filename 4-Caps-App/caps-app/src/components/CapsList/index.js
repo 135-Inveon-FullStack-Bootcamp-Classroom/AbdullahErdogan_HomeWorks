@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../Layout";
 import Grid from "@mui/material/Grid";
 import { useCapsContext } from "../../context/CapsContext";
 import CapsCard from "../CapsCard";
 import { Link } from "react-router-dom";
 function CapsList() {
-    const { capsList } = useCapsContext();
-
+    const { capsList, setGeneratedMeme } = useCapsContext();
+    useEffect(() => {
+        setGeneratedMeme("");
+    }, []);
     if (!capsList) {
         return <div>Loading...</div>;
     }
