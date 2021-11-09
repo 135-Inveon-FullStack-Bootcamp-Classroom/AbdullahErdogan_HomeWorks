@@ -1,15 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Layout from "../Layout";
 import Grid from "@mui/material/Grid";
 import { useCapsContext } from "../../context/CapsContext";
 import CapsCard from "../CapsCard";
+import { Link } from "react-router-dom";
 function CapsList() {
-    const { capsList, setCapsList } = useCapsContext();
-    useEffect(() => {
-        fetch("https://api.imgflip.com/get_memes")
-            .then((res) => res.json())
-            .then((res) => setCapsList(res.data.memes));
-    }, []);
+    const { capsList } = useCapsContext();
+
     if (!capsList) {
         return <div>Loading...</div>;
     }
@@ -22,7 +19,9 @@ function CapsList() {
             >
                 {capsList.map((caps, index) => (
                     <Grid item xs={2} sm={4} md={4} key={index}>
-                        <CapsCard caps={caps} />
+                        <Link to={`/single-caps/${caps.id}`}>
+                            <CapsCard caps={caps} />
+                        </Link>
                     </Grid>
                 ))}
             </Grid>
