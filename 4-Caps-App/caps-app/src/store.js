@@ -1,5 +1,10 @@
-import { createStore } from "redux";
-import addReduces from "./reducer";
+import { configureStore } from "@reduxjs/toolkit";
+import memeReducer from "./redux/memeReducer";
 
-const store = createStore(addReduces);
-export default store;
+const Store = configureStore({
+    reducer: {
+        memes: memeReducer,
+    },
+});
+
+export default Store;
