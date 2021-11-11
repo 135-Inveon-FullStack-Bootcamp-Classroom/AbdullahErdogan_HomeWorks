@@ -5,17 +5,18 @@ import { useCapsContext } from "../../context/CapsContext";
 import CapsCard from "../CapsCard";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchData } from "../../redux/actions";
-import { fetchMemes } from "../../redux/fetchData";
+import fetchMemes from "../../redux/fetchData";
 function CapsList() {
+    const memeList = useSelector((state) => state.allMemes.items);
     const dispatch = useDispatch();
-    const list = useSelector((state) => state.memes);
-    console.log(list);
     const { capsList, setGeneratedMeme } = useCapsContext();
     useEffect(() => {
-        dispatch(fetchMemes);
+        fetchMemes(dispatch);
+        console.log(memeList);
         setGeneratedMeme("");
     }, []);
+    if (memeList) {
+    }
     if (!capsList) {
         return <div>Loading...</div>;
     }

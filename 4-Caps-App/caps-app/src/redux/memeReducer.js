@@ -1,15 +1,15 @@
+import { FETCH_DATA } from "./actionType";
 const initialState = {
     items: [],
 };
-function memeReducer(state = initialState, action) {
+export const memeReducer = (state = initialState, action) => {
     switch (action.type) {
-        case "FETCH_DATA":
+        case FETCH_DATA:
             return {
                 ...state,
-                items: action.items,
+                items: action.payload,
             };
         default:
             return state;
     }
-}
-export default memeReducer;
+};
