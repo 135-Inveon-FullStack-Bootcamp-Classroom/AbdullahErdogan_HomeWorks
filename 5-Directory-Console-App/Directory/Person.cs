@@ -11,21 +11,21 @@ namespace Directory
         private string _name;
         private long _number;
         public string Name { get => _name; set => _name=value; }
-        public long Number { get { return _number; } set {
-                if (value.ToString().Length != 10)
+        public long Number { get => _number;  set {
+                if (value.ToString().Length == 10)
                 {
-                    Console.WriteLine("Please enter 10 digit for telephone number");
+                    _number = value;
                 }
                 else
                 {
-                    _number = value;
+                    Console.WriteLine("Please enter 10 digit for telephone number");
                 }
             } }
 
         public Person(string name,long number)
         {
-            _name = name;
-            _number = number;
+             Name = name;
+             Number = number;
         }
     }
 }

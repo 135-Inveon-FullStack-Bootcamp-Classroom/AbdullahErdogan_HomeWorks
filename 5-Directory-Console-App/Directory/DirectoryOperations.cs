@@ -10,6 +10,6 @@ namespace Directory
     {
         public abstract List<Person> GetPersonList();
         public abstract string AddNewPerson(Person person);
-        public abstract string DeletePerson(Person person);
+        public abstract string DeletePerson(string name);
     }
 }

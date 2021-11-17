@@ -12,15 +12,36 @@ namespace Directory
 
         public override string AddNewPerson(Person person)
         {
-            DirectoryList.Add(person);
-            ShowMessage message = new ShowMessage(true);
-            return message.Message;
+
+            if (person!=null)
+            {
+                DirectoryList.Add(person);
+                ShowMessage message = new ShowMessage(true);
+                return message.Message;
+            }
+            else
+            {
+                ShowMessage message = new ShowMessage(false);
+                return message.Message;
+            }
+
         }
 
 
-        public override string DeletePerson(Person person)
+        public override string DeletePerson(string name)
         {
-            throw new NotImplementedException();
+            Person person = DirectoryList.SingleOrDefault(x => x.Name == name);
+            if (person != null)
+            {
+                DirectoryList.Remove(person);
+                ShowMessage message = new ShowMessage(true);
+                return message.Message;
+            }
+            else
+            {
+                ShowMessage message = new ShowMessage(false);
+                return message.Message;
+            }
         }
 
         public override List<Person> GetPersonList()

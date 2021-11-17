@@ -13,6 +13,7 @@ namespace Directory
     {
         "List Directory",
         "Add New Person",
+        "Remove Person",
         "Exit"
     };
             DirectoryManager directory = new DirectoryManager();
@@ -27,7 +28,12 @@ namespace Directory
                     list = directory.GetPersonList();
                     if (list.Count>0)
                     {
-                        list.ForEach(person => Console.WriteLine(person.Name));
+                        Console.WriteLine("******** Directory List ********");
+                        list.ForEach(person => {
+                            Console.WriteLine("Name:   " + person.Name);
+                            Console.WriteLine("Number: " + person.Number);
+                            Console.WriteLine("-");
+                        });
                     }
                     else
                     {
@@ -42,6 +48,12 @@ namespace Directory
                     string number = Console.ReadLine();
                     Person newPerson = new Person(name, Convert.ToInt64(number));
                     Console.WriteLine(directory.AddNewPerson(newPerson));
+                }
+                else if (selectedMenuItem == "Remove Person")
+                {
+                    Console.WriteLine("Name: ");
+                    string name = Console.ReadLine();
+                    Console.WriteLine(directory.DeletePerson(name));
                 }
                 else if (selectedMenuItem == "Exit")
                 {
