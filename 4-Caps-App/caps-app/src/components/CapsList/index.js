@@ -12,9 +12,10 @@ function CapsList() {
     const { capsList, setGeneratedMeme } = useCapsContext();
     useEffect(() => {
         fetchMemes(dispatch);
-        console.log(memeList);
         setGeneratedMeme("");
     }, []);
+    console.log(memeList);
+
     if (memeList) {
     }
     if (!capsList) {

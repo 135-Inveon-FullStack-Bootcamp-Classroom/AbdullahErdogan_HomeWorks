@@ -1,0 +1,16 @@
+D:\HomeWorks\5-Directory-Console-App\Directory\bin\Debug\net5.0\Directory.exe
+D:\HomeWorks\5-Directory-Console-App\Directory\bin\Debug\net5.0\Directory.deps.json
+D:\HomeWorks\5-Directory-Console-App\Directory\bin\Debug\net5.0\Directory.runtimeconfig.json
+D:\HomeWorks\5-Directory-Console-App\Directory\bin\Debug\net5.0\Directory.runtimeconfig.dev.json
+D:\HomeWorks\5-Directory-Console-App\Directory\bin\Debug\net5.0\Directory.dll
+D:\HomeWorks\5-Directory-Console-App\Directory\bin\Debug\net5.0\ref\Directory.dll
+D:\HomeWorks\5-Directory-Console-App\Directory\bin\Debug\net5.0\Directory.pdb
+D:\HomeWorks\5-Directory-Console-App\Directory\obj\Debug\net5.0\Directory.csprojAssemblyReference.cache
+D:\HomeWorks\5-Directory-Console-App\Directory\obj\Debug\net5.0\Directory.GeneratedMSBuildEditorConfig.editorconfig
+D:\HomeWorks\5-Directory-Console-App\Directory\obj\Debug\net5.0\Directory.AssemblyInfoInputs.cache
+D:\HomeWorks\5-Directory-Console-App\Directory\obj\Debug\net5.0\Directory.AssemblyInfo.cs
+D:\HomeWorks\5-Directory-Console-App\Directory\obj\Debug\net5.0\Directory.csproj.CoreCompileInputs.cache
+D:\HomeWorks\5-Directory-Console-App\Directory\obj\Debug\net5.0\Directory.dll
+D:\HomeWorks\5-Directory-Console-App\Directory\obj\Debug\net5.0\ref\Directory.dll
+D:\HomeWorks\5-Directory-Console-App\Directory\obj\Debug\net5.0\Directory.pdb
+D:\HomeWorks\5-Directory-Console-App\Directory\obj\Debug\net5.0\Directory.genruntimeconfig.cache

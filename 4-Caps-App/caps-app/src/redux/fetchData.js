@@ -3,7 +3,7 @@ export default function fetchMemes(dispatch) {
         .then((res) => res.json())
         .then((res) =>
             dispatch({
-                type: "ITEMS",
+                type: "FETCH_DATA",
                 items: res.data.memes,
             })
         );
