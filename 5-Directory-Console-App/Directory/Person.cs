@@ -18,7 +18,7 @@ namespace Directory
                 }
                 else
                 {
-                    Console.WriteLine("Please enter 10 digit for telephone number");
+                    throw new Exception("Please enter 10 digit for telephone number");
                 }
             } }
 

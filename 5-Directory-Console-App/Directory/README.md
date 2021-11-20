@@ -3,3 +3,7 @@
 ## Image
 
 ![ScreenShot](img/ScreenShot.jpg)
+
+## Diagram
+
+![Diagram](img/Diagram.jpg)
