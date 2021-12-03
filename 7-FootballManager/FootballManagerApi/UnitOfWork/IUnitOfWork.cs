@@ -9,5 +9,7 @@ namespace FootballManagerApi.UnitOfWork
     public interface IUnitOfWork
     {
         public ITeamService TeamService { get; set; }
+        public IPlayerService PlayerService { get; set; }
+        public INationalTeamService NationalTeamService { get; set; }
     }
 }
